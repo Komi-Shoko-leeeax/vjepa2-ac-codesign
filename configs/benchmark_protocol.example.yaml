@@ -1,0 +1,37 @@
+benchmark:
+  environment: robosuite
+  task: Lift
+  robot: Panda
+  camera: agentview
+  image_size: 256
+  controller: BASIC
+  expected_action_dim: 7
+
+planning:
+  rollout: 2
+  cem_steps: 4
+  topk: 8
+  samples: [32, 64, 128, 256, 400, 800]
+  fixed_seed: true
+
+precision:
+  variants: [fp16, w8a16, w8a8]
+
+logging:
+  save_candidate_actions: true
+  save_candidate_energy: true
+  save_elite_flags: true
+  save_selected_action: true
+  save_iteration_index: true
+  save_latency: true
+  save_peak_cuda_memory: true
+
+metrics:
+  task_success: true
+  latent_cosine: true
+  latent_l1: true
+  spearman_rank: true
+  kendall_tau: true
+  topk_overlap: true
+  selected_action_consistency: true
+  pairwise_rank_flip_rate: true

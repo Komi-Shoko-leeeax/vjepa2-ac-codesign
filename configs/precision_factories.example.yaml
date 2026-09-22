@@ -1,0 +1,12 @@
+# FP16 is available through the built-in official local loader.
+fp16:
+  factory: builtin
+  dtype: fp16
+
+# Replace these with your *real* quantization implementation.
+# Each function should return: (encoder, predictor)
+w8a16:
+  factory: your_quant_package.factories:build_w8a16
+
+w8a8:
+  factory: your_quant_package.factories:build_w8a8

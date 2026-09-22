@@ -1,0 +1,34 @@
+Intended project additions / changes relative to upstream HEAD 204698b
+
+MODIFIED TRACKED FILE
+- .gitignore (benchmark outputs/checkpoints only)
+
+NEW ROOT FILES
+- .gitattributes
+- AGENT_REVIEW_NOTES.md
+- INTEGRATION_CHECKLIST.md
+- README_BENCHMARK_ADAPTER.md
+- PUSH_TO_GITHUB.md
+- PROJECT_ADDITIONS_MANIFEST.txt
+- requirements-adapter.txt
+
+NEW CONFIGS
+- configs/benchmark_protocol.example.yaml
+- configs/precision_factories.example.yaml
+
+NEW SCRIPTS
+- scripts/check_vjepa2_ac_adapter.py
+- scripts/compare_energy_runs.py
+- scripts/generate_candidate_case.py
+- scripts/run_recorded_case.py
+- scripts/run_sample_sweep.py
+- scripts/validate_repository_layout.py
+
+NEW PYTHON PACKAGE
+- vjepa2_bench/__init__.py
+- vjepa2_bench/metrics.py
+- vjepa2_bench/model_adapter.py
+- vjepa2_bench/model_factory.py
+- vjepa2_bench/robosuite_adapter.py
+- vjepa2_bench/stable_worldmodel_bridge.py
+- vjepa2_bench/trace.py

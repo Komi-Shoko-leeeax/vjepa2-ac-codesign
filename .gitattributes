@@ -1,0 +1,4 @@
+# Keep the upstream codebase stable when the fork is edited from Windows tools.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf

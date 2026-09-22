@@ -30,3 +30,13 @@ app/vjepa_droid_v2/local/
 app/vjepa_droid_v3/local/
 app/vjepa_droid_v4/local/
 configs/local
+
+# V-JEPA2-AC benchmark / deployment outputs
+runs/
+benchmark_data/
+checkpoints/
+weights/
+*.trace.npz
+*.pth
+*.pt
+*.ckpt
